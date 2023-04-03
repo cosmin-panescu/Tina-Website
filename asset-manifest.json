@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tina-Website/static/css/main.748f0f06.css",
+    "main.js": "/Tina-Website/static/js/main.a6da9850.js",
+    "index.html": "/Tina-Website/index.html",
+    "main.748f0f06.css.map": "/Tina-Website/static/css/main.748f0f06.css.map",
+    "main.a6da9850.js.map": "/Tina-Website/static/js/main.a6da9850.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.748f0f06.css",
+    "static/js/main.a6da9850.js"
+  ]
+}
