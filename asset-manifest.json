@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Tina-Website/static/css/main.43cf546f.css",
-    "main.js": "/Tina-Website/static/js/main.603edf03.js",
+    "main.css": "/Tina-Website/static/css/main.a4cb220e.css",
+    "main.js": "/Tina-Website/static/js/main.5e9e8614.js",
     "static/media/profile-image.png": "/Tina-Website/static/media/profile-image.ac58f74195e832c76304.png",
     "static/media/project-5.jpeg": "/Tina-Website/static/media/project-5.0b26b0692e9a610483a4.jpeg",
     "static/media/project-6.jpeg": "/Tina-Website/static/media/project-6.ecd87ccc7667efc5f77e.jpeg",
@@ -13,11 +13,11 @@
     "index.html": "/Tina-Website/index.html",
     "static/media/close-icon.svg": "/Tina-Website/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
     "static/media/menu-icon.svg": "/Tina-Website/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
-    "main.43cf546f.css.map": "/Tina-Website/static/css/main.43cf546f.css.map",
-    "main.603edf03.js.map": "/Tina-Website/static/js/main.603edf03.js.map"
+    "main.a4cb220e.css.map": "/Tina-Website/static/css/main.a4cb220e.css.map",
+    "main.5e9e8614.js.map": "/Tina-Website/static/js/main.5e9e8614.js.map"
   },
   "entrypoints": [
-    "static/css/main.43cf546f.css",
-    "static/js/main.603edf03.js"
+    "static/css/main.a4cb220e.css",
+    "static/js/main.5e9e8614.js"
   ]
 }
