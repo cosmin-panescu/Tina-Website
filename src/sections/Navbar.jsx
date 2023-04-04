@@ -3,12 +3,15 @@ import React, { useState } from 'react'
 import useMediaQuery from '../hooks/useMediaQuery';
 // Link scroll
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+// Assets
+import MenuIcon from '../assets/menu-icon.svg'
+import CloseIcon from '../assets/close-icon.svg'
 
 const Link = ({ page }) => {
     const lowerCasePage = page.toLowerCase();
     return (
         <AnchorLink
-            className="hover:text-yellow transition duration-300"
+            className="hover:opacity-80 transition duration-300"
             href={`#${lowerCasePage}`}
         >
             {page}
@@ -22,13 +25,13 @@ const Navbar = ({ isTop }) => {
     const navbarBackground = isTop ? "" : "bg-red";
 
     return (
-        <nav className={`${navbarBackground}z-40 w-full fixed top-0 py-6`}>
+        <nav className={`${navbarBackground} transition duration-700 z-40 w-full fixed top-0 py-6`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
                 <h4 className="font-playfair text-3xl font-bold">TM</h4>
 
                 {/* Desktop navbar */}
                 {isAboveSmallScreen ? (
-                    <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+                    <div className="flex justify-between gap-12 font-opensans text-md font-semibold">
                         <Link page="Home" />
                         <Link page="Skills" />
                         <Link page="Projects" />
@@ -39,7 +42,7 @@ const Navbar = ({ isTop }) => {
                         className='rounded-full bg-red p-2'
                         onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
-                        <img alt="menu-icon" src='../assets/menu-icon.svg' />
+                            <img alt="menu-icon" src={MenuIcon} />
                     </button>
                 )}
 
@@ -51,7 +54,7 @@ const Navbar = ({ isTop }) => {
                             <button
                                 onClick={() => setIsMenuToggled(!isMenuToggled)}
                             >
-                                <img src="../assets/close-icon.svg" alt="close" />
+                                <img src={CloseIcon} alt="close" />
                             </button>
                         </div>
                         {/* Menu links */}

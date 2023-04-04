@@ -7,6 +7,8 @@ import Home from "./sections/Home";
 import LineGradient from "./components/LineGradient";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -15,13 +17,14 @@ function App() {
   const [isTop, setIsTop] = useState(true);
 
   useEffect(() => {
+    // track window scroll
     const handleScroll = () => {
       if (window.scrollY === 0) {
-        setIsTop(true);
-      } else if (window.scrollY !== 0) {
+        setIsTop(true)
+      } else if (window.scrollY >= 50) {
         setIsTop(false);
-      }
-    }
+      };
+    };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -49,6 +52,12 @@ function App() {
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
+      <LineGradient />
+      {/* CONTACT */}
+      <div className="w-5/6 mx-auto md:h-full">
+        <Contact />
+      </div>
+      <Footer />
     </div>
   );
 }

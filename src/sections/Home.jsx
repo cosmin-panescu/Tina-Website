@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 // Link scroll
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import SocialMedia from '../components/SocialMedia'
+// Assets
+import ProfileImage from '../assets/profile-image.png'
 
 const Home = () => {
     const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
@@ -18,14 +20,14 @@ const Home = () => {
                     <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
                         <img
                             className='hover:filter hover:saturate-200 transition duration-300 z-10 w-full max-w-[300px] md:max-w-[400px]'
-                            src="/assets/profile-image.png"
+                            src={ProfileImage}
                             alt="profile picture"
                         />
                     </div>
                 ) : (
                     <img
-                        className='hover:filter hover:saturate-200 transition duration-300 z-10 w-full max-w-[400px] md:max-w-[600px]'
-                        src="/assets/profile-image.png"
+                            className='hover:filter hover:saturate-200 transition duration-300 z-10 w-full max-w-[200px] sm:max-w-[300px]'
+                        src={ProfileImage}
                         alt="profile picture"
                     />
                 )}
@@ -44,11 +46,11 @@ const Home = () => {
                         visible: { opacity: 1, x: 0 }
                     }}
                 >
-                    <h3 className='text-6xl font-playfair z-10 text-center md:text-start'>
+                    <h3 className='text-5xl md:text-6xl font-playfair z-10 text-center md:text-start'>
                         Tina Mesaros
                     </h3>
-                    <p className='mt-10 mb-7 text-md text-center md:text-start'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, perspiciatis. Possimus suscipit voluptatibus nisi? Sit voluptatem similique cumque sequi asperiores!
+                    <p className='mt-4 sm:mt-10 mb-7 text-md text-center md:text-start'>
+                        Lorem Possimus suscipit voluptatibus nisi? Sit voluptatem similique cumque sequi asperiores!
                     </p>
                 </motion.div>
 
@@ -65,18 +67,17 @@ const Home = () => {
                     }}
                 >
                     <AnchorLink
-                        className='bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-bue hover:text-white transition duration-500'
+                        // className='bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-bue hover:text-white transition duration-500'
+                        className='home-btn'
                         href='#contact'
                     >
-                        Contact Me
-                    </AnchorLink>
-                    <AnchorLink
-                        className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
-                        href='#contact'
-                    >
-                        <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
-                            Let's talk
-                        </div>
+                        <button className='custom-btn'>
+                            <span className="text">Contact Me</span>
+                            <span className="blob"></span>
+                            <span className="blob"></span>
+                            <span className="blob"></span>
+                            <span className="blob"></span>
+                        </button>
                     </AnchorLink>
                 </motion.div>
 

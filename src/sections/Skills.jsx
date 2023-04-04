@@ -25,9 +25,9 @@ const Skills = () => {
                 }}
             >
                 <p className='font-playfair font-semibold text-4xl mb-5'>
-                    My <span className='text-red'>Skills</span> 
+                    My <span className='text-red'>Skills</span>
                 </p>
-                <LineGradient width='w-1/6' />
+                <LineGradient width='w-2/3 xs:w-1/3 sm:w-1/4' />
             </motion.div>
 
             {/* Skills */}
@@ -46,9 +46,9 @@ const Skills = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className='font-playfair font-semibold text-5xl'>01</p>
-                            <p className='font-playfair font-semibold text-3xl mt-3'>Graphic Design</p>
+                            <p className='font-playfair font-semibold text-4xl mt-3'>Graphic Design</p>
                         </div>
-                        <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+                        <div className="w-1/2 md:w-3/4 h-32 rounded-full bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className='mt-5'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, ab amet. Quas et exercitationem libero commodi facilis cupiditate architecto!
@@ -68,9 +68,9 @@ const Skills = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className='font-playfair font-semibold text-5xl'>02</p>
-                            <p className='font-playfair font-semibold text-3xl mt-3'>Management</p>
+                            <p className='font-playfair font-semibold text-4xl mt-3'>Management</p>
                         </div>
-                        <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+                        <div className="w-1/2 md:w-3/4 h-32 rounded-sm bg-red absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className='mt-5'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, ab amet. Quas et exercitationem libero commodi facilis cupiditate architecto!
