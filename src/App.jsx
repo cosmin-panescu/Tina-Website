@@ -9,6 +9,7 @@ import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import About from "./sections/About";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -33,14 +34,15 @@ function App() {
   return (
     <div className="app bg-deep-blue">
       {/* NAVBAR */}
-      <Navbar
-        isTop={isTop}
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}
-      />
+      <Navbar isTop={isTop} />
       {/* HOME */}
       <div className="w-5/6 mx-auto md:h-full">
-        <Home setSelectedPage={setSelectedPage} />
+        <Home />
+      </div>
+      <LineGradient />
+      {/* ABOUT */}
+      <div className="w-5/6 mx-auto md:h-full">
+        <About />
       </div>
       <LineGradient />
       {/* SKILLS */}

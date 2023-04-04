@@ -5,7 +5,7 @@ import { SlSocialInstagram, SlSocialLinkedin, SlSocialFacebook } from 'react-ico
 
 const SocialMedia = () => {
   return (
-    <div className="flex justify-center md:justify-start my-5 xs:my-10 gap-7">
+    <div className="flex justify-center my-5 md:justify-start xs:my-10 gap-7">
       <a
         className='social hover:text-[#0a66c2]'
         target='_blank'
@@ -17,7 +17,7 @@ const SocialMedia = () => {
       <a
         className='social hover:text-[#e1306c]'
         target='_blank'
-        href="https://www.linkedin.com"
+        href="https://www.instagram.com/m.tinna27/"
         rel='norefference'
       >
         <SlSocialInstagram />
@@ -25,7 +25,7 @@ const SocialMedia = () => {
       <a
         className='social hover:text-[#1877f2]'
         target='_blank'
-        href="https://www.linkedin.com"
+        href="https://www.facebook.com/tina.mesaros"
         rel='norefference'
       >
         <SlSocialFacebook />
